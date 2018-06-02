@@ -9,6 +9,7 @@ sqlalchemy = "*"
 flask = "*"
 marshmallow = "*"
 flask-cors = "*"
+python-jose = "*"
 
 [dev-packages]
 pylint = "*"
