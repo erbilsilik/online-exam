@@ -9,9 +9,6 @@ import {ExamsApiService} from './exams-api.service';
   template: `
     <div>
       <button routerLink="/new-exam">New Exam</button>
-      <button (click)="signIn()" *ngIf="!authenticated">Sign In</button>
-      <button (click)="signOut()" *ngIf="authenticated">Sign Out</button>
-      <p *ngIf="authenticated">Hello, {{getProfile().name}}</p>
       <ul>
         <li *ngFor="let exam of examsList">
           {{exam.title}}

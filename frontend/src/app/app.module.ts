@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatToolbarModule, MatButtonModule} from '@angular/material';
 
 import * as Auth0 from 'auth0-web';
 import { AppComponent } from './app.component';
@@ -29,6 +31,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
     ),
+    NoopAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [ExamsApiService],
   bootstrap: [AppComponent]
